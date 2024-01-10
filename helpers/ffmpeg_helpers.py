@@ -25,7 +25,7 @@ def get_auto_outdir_timestring(args,ffmpeg_mode):
 
 def get_ffmpeg_path(ffmpeg_outdir, ffmpeg_timestring, ffmpeg_extension):
     try:
-        ffmpeg_image_path = os.path.join(ffmpeg_outdir,ffmpeg_timestring+f"_%05d.{ffmpeg_extension}")
+        ffmpeg_image_path = os.path.join(ffmpeg_outdir,ffmpeg_timestring+"."+ffmpeg_extension)
         ffmpeg_mp4_path = os.path.join(ffmpeg_outdir,ffmpeg_timestring+".mp4")
         ffmpeg_gif_path = os.path.join(ffmpeg_outdir,ffmpeg_timestring+".gif")
         return ffmpeg_image_path, ffmpeg_mp4_path, ffmpeg_gif_path
